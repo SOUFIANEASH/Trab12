@@ -1,0 +1,29 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Soufiane</span>
+        <span class="logo-bracket">/&gt;</span>
+        <p>CS Student & Developer based in Vilnius, Lithuania.</p>
+      </div>
+
+      <nav class="footer-nav">
+        @for (link of links; track link.label) {
+          <a [href]="link.anchor">{{ link.label }}</a>
+        }
+      </nav>
+
+      <div class="footer-socials">
+        @for (social of socials; track social.label) {
+          <a [href]="social.href">{{ social.label }}</a>
+        }
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ year }} {{ author }}. All rights reserved.</p>
+      <p class="footer-note">Built with Angular 🚀 · Student No. 28638</p>
+    </div>
+  </div>
+</footer>

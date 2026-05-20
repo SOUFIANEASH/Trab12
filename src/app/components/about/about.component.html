@@ -1,0 +1,38 @@
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-card">
+          <div class="card-accent"></div>
+          <div class="card-avatar">
+            <span>SA</span>
+          </div>
+          <div class="card-info">
+            <h3>Soufiane Achouch</h3>
+            <p>CS Student & Developer</p>
+            <span class="card-badge">🎓 Vilnius College</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Crafting Digital Experiences</h2>
+
+        <p class="about-text">{{ bio }}</p>
+        <p class="about-text">{{ bio2 }}</p>
+
+        <div class="details-grid">
+          @for (detail of details; track detail.label) {
+            <div class="detail-item">
+              <span class="detail-label">{{ detail.label }}</span>
+              <span class="detail-value">{{ detail.value }}</span>
+            </div>
+          }
+        </div>
+
+        <a href="#contact" class="btn-primary">Let's Talk</a>
+      </div>
+    </div>
+  </div>
+</section>
