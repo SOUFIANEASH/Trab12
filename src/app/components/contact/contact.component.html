@@ -1,0 +1,59 @@
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title">Contact Me</h2>
+      <p class="section-subtitle">Feel free to reach out for collaborations, internships, or just a friendly hello.</p>
+    </div>
+ 
+    <div class="contact-grid">
+      <!-- Info -->
+      <div class="contact-info">
+        <div class="info-list">
+          @for (item of contactInfo; track item.label) {
+            <div class="info-item">
+              <div class="info-icon">{{ item.icon }}</div>
+              <div class="info-text">
+                <span class="info-label">{{ item.label }}</span>
+                <span class="info-value">{{ item.value }}</span>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+ 
+      <!-- Form -->
+      <div class="contact-form-wrapper">
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="Soufiane" />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Achouch" />
+            </div>
+          </div>
+ 
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com" />
+          </div>
+ 
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder="Internship opportunity" />
+          </div>
+ 
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Write your message here..."></textarea>
+          </div>
+ 
+          <button class="submit-btn" type="button">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
